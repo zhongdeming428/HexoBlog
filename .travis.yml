@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "7"
+install:
+  - npm i hexo-cli -g
+  - cd Blogs && npm i
+script:
+  - git config --global user.name "zhongdeming428" 
+  - git config --global user.email "570160841@qq.com"
+  - sed -i'' "/^ *repo/s~github\.com~${Travis_Token}@github.com~" _config.yml
+  # - git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant
+  - hexo clean
+  - hexo g
+after_script:
+  - hexo d
+
+cache:
+  directories:
+    - node_modules

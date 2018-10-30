@@ -1,0 +1,23 @@
+{
+  "name": "HexoBlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhongdeming428/HexoBlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhongdeming428/HexoBlog/issues"
+  },
+  "homepage": "https://github.com/zhongdeming428/HexoBlog#readme",
+  "dependencies": {
+    "hexo-cli": "^1.1.0"
+  }
+}
