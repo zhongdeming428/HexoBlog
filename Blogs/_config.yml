@@ -4,12 +4,19 @@
 
 # Site
 title: D.M
-subtitle:
+subtitle: D.M's Blog
 description:
-keywords:
+keywords: 
+  - ZhongDeming
+  - zhongdeming428
+  - Blog
+  - Front-End
+  - JavaScript
 author: DM Zhong
-language:
-timezone:
+language: Chinese
+timezone: Asia/Shanghai
+avatar: /images/avatar.jpeg
+favicon:  /images/logo.png
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

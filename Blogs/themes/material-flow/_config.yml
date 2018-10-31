@@ -18,14 +18,14 @@ search:
 
 # friends link
 links:
-  - name: ClassicOldSong
-    url: https://ccoooss.com
-  - name: Frantic1048
-    url: https://frantic1048.logdown.com/
-  - name: Hclmaster
-    url: https://hclmaster.github.io/
-  - name: WANG Hsü-Tung
-    url: https://whst.github.io/
+  - name: 掘金
+    url: https://juejin.im/user/59424035128fe1006a1c3747
+  - name: 博客园
+    url: https://www.cnblogs.com/DM428/
+  - name: 新浪微博
+    url: https://m.weibo.cn/profile/5198069647
+  - name: GitHub
+    url: https://github.com/zhongdeming428
 
 # navigation menu
 menu:
@@ -35,9 +35,9 @@ menu:
   - name: Archives
     slug: archives
     url: /archives
-  - name: Gallery
-    slug: gallery
-    url: https://photos.google.com/album/AF1QipNoqKYgspQo5O1YhlFXGCQ7p575KBH3Yxf8WHL4?hl=zh-CN
+  - name: Comments
+    slug: comments
+    url: /comments
   - name: About
     slug: about
     url: /about
