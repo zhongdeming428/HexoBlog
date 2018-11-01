@@ -63,7 +63,7 @@ social:
 	url: /atom.xml
 
 valine: 
-  appid: 'dEN3oH01uVTVRJFwuWKzucX3-gzGzoHsz' #Leancloud应用的appId
+  appId: 'dEN3oH01uVTVRJFwuWKzucX3-gzGzoHsz' #Leancloud应用的appId
   appkey: 'l11XssvYyHKpzcePOV03e2WJ' #Leancloud应用的appKey
   verify: false #验证码
   notify: false #评论回复提醒

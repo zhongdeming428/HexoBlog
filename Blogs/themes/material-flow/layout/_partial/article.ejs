@@ -58,7 +58,8 @@
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--Valine 的核心代码库-->
-<%- js('js/Valine.min.js') %>
+<!-- <%- js('js/Valine.min.js') %> -->
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <script>
 	new Valine({
 		// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
@@ -66,8 +67,8 @@
 		el: '.comment',
 		emoticon_url: 'https://cloud.panjunwen.com/alu',
 		emoticon_list: ["吐.png", "期待.png", "高兴.png", "吐血倒地.png", "哭泣.png", "欢呼.png"],
-		app_id: 'dEN3oH01uVTVRJFwuWKzucX3-gzGzoHsz', // 这里填写上面得到的APP ID
-		app_key: 'l11XssvYyHKpzcePOV03e2WJ', // 这里填写上面得到的APP KEY
+		appId: 'dEN3oH01uVTVRJFwuWKzucX3-gzGzoHsz', // 这里填写上面得到的APP ID
+		appKey: 'l11XssvYyHKpzcePOV03e2WJ', // 这里填写上面得到的APP KEY
 		placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!', // 留言框占位提示文字
 	});
 </script>
