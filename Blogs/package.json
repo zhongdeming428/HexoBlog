@@ -6,7 +6,8 @@
     "version": "3.8.0"
   },
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "dev": "hexo server -p 5000"
   },
   "dependencies": {
     "hexo": "^3.7.0",
