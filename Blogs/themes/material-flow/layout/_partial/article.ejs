@@ -48,7 +48,7 @@
 		</section>
 	<% } %>
 	<!-- id 将作为查询条件 -->
-	<span id= "<%= date(post.date, 'YYYY/MM/DD')%>/<%= post.title %>" class="leancloud-visitors" data-flag-title="<%= post.title %>">
+	<span id= "<%= date(post.date, 'YYYY/MM/DD')%>/<%= post.title.replace(/\s/g, '') %>" class="leancloud-visitors" data-flag-title="<%= post.title.replace(/\s/g, '') %>">
 		<em class="post-meta-item-text">阅读量 </em>
 		<i class="leancloud-visitors-count">1000000</i>
 	</span>
