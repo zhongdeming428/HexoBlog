@@ -1,7 +1,9 @@
 ---
 title: 基于 Webpack 4 搭建 Vue 开发环境
 date: 2018-11-02 20:42:01
-categories: Webpack, Vue
+categories: 
+  - Webpack
+  - Vue
 ---
 
 自从工作之后，就已经很久没有写过博客了。时间被分割得比较碎，积累了一段时间的学习成果，才写下了这篇博客。
@@ -17,8 +19,10 @@ categories: Webpack, Vue
 
 在命令行中敲入如下命令：
 
-    $ mkdir Webpack-Vue && cd Webpack-Vue && npm init -y
-  
+```bash
+$ mkdir Webpack-Vue && cd Webpack-Vue && npm init -y
+```
+<!-- more --> 
 然后你就可以在你的当前路径下看到一个叫 `Webpack-Vue` 的文件夹，里面有一个包含默认信息的 `package.json` 文件，打开并修改这个文件的一些内容。
 
 然后我们在项目文件夹中创建以下几个文件夹：
