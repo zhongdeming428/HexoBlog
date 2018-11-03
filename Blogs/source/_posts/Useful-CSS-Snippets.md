@@ -1,7 +1,8 @@
 ---
 title: Useful CSS Snippets
 date: 2018-11-02 16:22:03
-categories: CSS
+categories: 
+  - CSS
 ---
 
 看了 30 Seconds CSS，有了许多收获，所以写下了这篇文章，算是收藏一些代码小片段，留作后用。

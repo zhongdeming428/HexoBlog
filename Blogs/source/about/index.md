@@ -1,6 +1,7 @@
 ---
 title: About
 date: 2018-10-31 21:27:31
+comments: false
 ---
 
 *   E-mail: zhongdeming428@gmail.com

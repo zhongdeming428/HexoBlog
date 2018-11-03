@@ -1,7 +1,8 @@
 ---
 title: 前端工程师使用 Deepin 笔记
 date: 2018-11-02 21:25:42
-categories: Linux
+categories: 
+    -   Linux
 ---
 ![_ _20180704114914](https://user-images.githubusercontent.com/25274581/42255823-4ef7f7f0-7f80-11e8-8f0c-d553a2f84db1.png)
 

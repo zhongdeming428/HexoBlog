@@ -2,8 +2,8 @@
 title: Vim 基本命令入门
 date: 2018-11-02 21:27:36
 categories:
-    -   Vim
     -   Linux
+    -   Vim
 ---
 ![_ _20180628165722](https://user-images.githubusercontent.com/25274581/42070648-028851e8-7b8a-11e8-9cd9-6fe5b4a8ddfd.png)
 最近在学习 Linux，前面的基础知识学习了一下，进入了 Vim 的学习环节。感觉这个编辑器还是可以的，有特色，鼠标都不用，蛮炫酷。对于基本

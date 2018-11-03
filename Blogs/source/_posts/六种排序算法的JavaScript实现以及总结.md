@@ -2,8 +2,8 @@
 title: 六种排序算法的JavaScript实现以及总结
 date: 2018-11-02 21:30:59
 categories: 
-    -   Algorithm
     -   JavaScript
+    -   Algorithm
 ---
 最近几天在系统的复习排序算法，之前都没有系统性的学习过，也没有留下过什么笔记，所以很快就忘了，这次好好地学习一下。
 

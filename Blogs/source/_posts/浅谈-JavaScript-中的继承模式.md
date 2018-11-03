@@ -1,7 +1,8 @@
 ---
 title: 浅谈 JavaScript 中的继承模式
 date: 2018-11-02 21:20:28
-categories: JavaScript
+categories: 
+    -   JavaScript
 ---
 
 最近在读一本设计模式的书，书中的开头部分就讲了一下 JavaScript 中的继承，阅读之后写下了这篇博客作为笔记。毕竟好记性不如烂笔头。
