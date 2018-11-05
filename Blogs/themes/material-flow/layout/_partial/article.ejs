@@ -11,6 +11,10 @@
 	  <%= date(post.date, 'MMM D, YYYY') %>
 	</time>
 	<%- partial('categories',{post:post}) %>
+	<br>
+	<span id="busuanzi_container_page_pv">
+		<time>浏览次数：<span id="busuanzi_value_page_pv"></span></time>
+ 	</span>
 	</section>
 	<% if(post.toc!==false){ %>
 		<section class="toc-wrapper"><%- toc(post.content) %></section>
@@ -47,9 +51,6 @@
 			<div id="disqus_thread"></div>
 		</section>
 	<% } %>
-	<span id="busuanzi_container_page_pv">
-		本文总阅读量<span id="busuanzi_value_page_pv"></span>次
- 	</span>
 	<div class="m-box">
 		<div class="icn"><a  class="wb1" onclick="shareToSinaWB(event)"></a></div>
 	</div>
