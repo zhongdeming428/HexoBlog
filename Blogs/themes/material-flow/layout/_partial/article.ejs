@@ -47,11 +47,9 @@
 			<div id="disqus_thread"></div>
 		</section>
 	<% } %>
-	<!-- id 将作为查询条件 -->
-	<span id= "<%= date(post.date, 'YYYY/MM/DD')%>/<%= post.title.replace(/\s/g, '') %>" class="leancloud-visitors" data-flag-title="<%= post.title.replace(/\s/g, '') %>">
-		<em class="post-meta-item-text">阅读量 </em>
-		<i class="leancloud-visitors-count">1000000</i>
-	</span>
+	<span id="busuanzi_container_page_pv">
+		本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+ 	</span>
 	<div class="m-box">
 		<div class="icn"><a  class="wb1" onclick="shareToSinaWB(event)"></a></div>
 	</div>
@@ -99,7 +97,6 @@
 		appId: 'dEN3oH01uVTVRJFwuWKzucX3-gzGzoHsz', // 这里填写上面得到的APP ID
 		appKey: 'l11XssvYyHKpzcePOV03e2WJ', // 这里填写上面得到的APP KEY
 		placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!', // 留言框占位提示文字
-		visitor: true
 	});
 	var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
 			_width = 600,
