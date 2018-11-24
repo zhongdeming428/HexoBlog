@@ -113,6 +113,7 @@ HTML 代码如下：
 ## 三、自定义滚动条
 
 CSS 代码如下：
+
 ```css
   .custom-scrollbar {
     width: 40rem;
@@ -128,7 +129,9 @@ CSS 代码如下：
     background-color:mediumpurple;
   }
 ```
+
 HTML 代码如下：
+
 ```html
   <div class="custom-scrollbar">
     <p>
@@ -159,6 +162,7 @@ HTML 代码如下：
 ## 四、自定义文本选择时的样式
 
 CSS 代码如下：
+
 ```css
   .custom-text-selection {
     width: 50%;
@@ -168,7 +172,9 @@ CSS 代码如下：
     color: white;
   }
 ```
+
 HTML 代码如下：
+
 ```html
   <p class="custom-text-selection">
     Pellentesque habitant morbi tristique senectus et 
@@ -189,6 +195,7 @@ HTML 代码如下：
     porttitor, facilisis luctus, metus
   </p>
 ```
+
 效果截图如下：
 
 ![img](https://user-gold-cdn.xitu.io/2018/10/21/166958a71843a806?w=1007&h=352&f=gif&s=62142)
@@ -196,13 +203,16 @@ HTML 代码如下：
 ## 五、禁止文本被选中
 
 CSS 代码如下：
+
 ```css
   .disable-selection {
     width: 50%;
     user-select: none;
   }
 ```
+
 HTML 代码如下：
+
 ```html
   <p class="disable-selection">
     Pellentesque habitant morbi tristique senectus et 
