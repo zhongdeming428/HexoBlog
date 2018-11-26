@@ -12,6 +12,8 @@ categories: Java
 
 ![创建项目.png](https://github.com/zhongdeming428/MyMemorandum/blob/master/Notes/pics/%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png?raw=true)
 
+<!-- more -->
+
 选择完毕之后点击下一步。
 
 然后给你的项目取个名字，第一个就叫 HelloWorld 好了。
