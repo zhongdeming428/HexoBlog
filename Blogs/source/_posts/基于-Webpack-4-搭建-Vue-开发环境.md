@@ -547,7 +547,7 @@ Webpack 4 开启热更新相对容易，具体步骤如下：
 ```js
     {
       test: /\.styl(us)$/,
-      use: ['vue-style-loader', 'css-loader, 'stylus-loader', 'postcss-loader']
+      use: ['vue-style-loader', 'css-loader', 'postcss-loader', 'stylus-loader']
     }
 ```
 接下来只要你在 Vue 单文件组件的 style 标签加上 `lang='stylus'`，你就可以使用 stylus 来写 CSS 了。
