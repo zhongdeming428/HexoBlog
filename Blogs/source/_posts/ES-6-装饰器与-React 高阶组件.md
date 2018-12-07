@@ -1,5 +1,5 @@
 ---
-title: ES 6 装饰器与 React
+title: ES 6 装饰器与 React 高阶组件
 date: 2018-12-07 22:04:25
 categories:
     - React
