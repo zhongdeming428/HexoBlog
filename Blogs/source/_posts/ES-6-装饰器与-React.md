@@ -18,7 +18,7 @@ GitHub 地址：`https://github.com/zhongdeming428/HOC`
 ```bash
 $ git clone https://github.com/zhongdeming428/HOC.git
 ```
-
+<!-- more -->
 克隆下来以后就可以尝试啦！
 
 ## 二、Decorator 的基本使用
