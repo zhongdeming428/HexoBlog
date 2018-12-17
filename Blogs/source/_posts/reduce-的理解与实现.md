@@ -1,5 +1,5 @@
 ---
-title: reduce 的理解与实现
+title: Array.prototype.reduce 的理解与实现
 date: 2018-12-16 14:29:15
 categories:
   - JavaScript
@@ -24,6 +24,8 @@ reduce 接受两个参数，第二个参数可选：
 @param {Number} key 当前遍历值的索引
 @param {Array} arr 当前遍历的数组
 ```
+
+<!-- more -->
 
 callback 接受这四个参数，经过处理后返回新的累计值，而这个累计值会作为新的 acc 传递给下一个 callback 处理。直到处理完所有的数组项。得到一个最终的累计值。
 
