@@ -40,6 +40,8 @@ $ npm i react react-dom -S
 
 可以注意到我们没有安装 babel 转译器，如果我们只写 `.ts` 或者 `.tsx` 文件，可以不安装 babel。如果要转译处理 `.js` 文件的话，还是要使用到 babel。
 
+<!-- more -->
+
 我们先写基础配置：
 
 **webpack.base.conf.js**
