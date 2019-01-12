@@ -12,6 +12,7 @@ categories:
 
 2018 年 10 月 23 号，React 发布了 [v16.6 版本](https://react.docschina.org/blog/2018/10/23/react-v-16-6.html)，新版本中有个新特性叫 `lazy`，通过 [lazy](https://react.docschina.org/blog/2018/10/23/react-v-16-6.html#reactlazy-code-splitting-with-suspense) 和 Suspense 组件我们就可以实现异步组件，如果你使用的是 React v16.6 以上版本：
 
+<!-- more -->
 
 最简单的实现方法：
 
