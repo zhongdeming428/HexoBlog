@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Useful CSS Snippets | D.M</title>
+  <meta name="description" content>
+  <meta name="keywords" content="ZhongDeming,zhongdeming428,Blog,Front-End,JavaScript">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/images/logo.png">
+  <link rel="alternate" href="/atom.xml" title="D.M">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="看了 30 Seconds CSS，有了许多收获，所以写下了这篇文章，算是收藏一些代码小片段，留作后用。 一、手写 Loading 动画（1）弹性加载动画CSS 代码如下：1234567891011121314151617181920212223242526272829303132.bounce-loading &amp;#123;  width: 20rem;  height: 10rem;  back">
+<meta name="keywords" content="ZhongDeming,zhongdeming428,Blog,Front-End,JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Useful CSS Snippets">
+<meta property="og:url" content="http://zhongdeming.fun/2018/11/02/Useful-CSS-Snippets/index.html">
+<meta property="og:site_name" content="D.M">
+<meta property="og:description" content="看了 30 Seconds CSS，有了许多收获，所以写下了这篇文章，算是收藏一些代码小片段，留作后用。 一、手写 Loading 动画（1）弹性加载动画CSS 代码如下：1234567891011121314151617181920212223242526272829303132.bounce-loading &amp;#123;  width: 20rem;  height: 10rem;  back">
+<meta property="og:locale" content="Chinese">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/21/1669588f432097e2?w=472&h=229&f=gif&s=66004">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/21/166958969ce9a9ae?w=89&h=70&f=gif&s=45939">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/21/166958a71843a806?w=1007&h=352&f=gif&s=62142">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/21/166958ac186ecaa4?w=615&h=147&f=gif&s=5740">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/21/166958b6988221d8?w=528&h=79&f=gif&s=19156">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/21/166958bd76246b68?w=528&h=79&f=gif&s=17102">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/21/166958c2b4b0426d?w=1000&h=75&f=gif&s=67570">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/21/166958cb638629e1?w=567&h=178&f=gif&s=2971">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/21/166958ce71ae969c?w=751&h=635&f=gif&s=663102">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/21/166958d4832c8669?w=905&h=194&f=png&s=11999">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/21/166958d8c308a316?w=246&h=78&f=gif&s=19864">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/10/21/166958e07efa6fc6?w=722&h=115&f=png&s=9232">
+<meta property="og:updated_time" content="2021-05-07T21:21:43.640Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Useful CSS Snippets">
+<meta name="twitter:description" content="看了 30 Seconds CSS，有了许多收获，所以写下了这篇文章，算是收藏一些代码小片段，留作后用。 一、手写 Loading 动画（1）弹性加载动画CSS 代码如下：1234567891011121314151617181920212223242526272829303132.bounce-loading &amp;#123;  width: 20rem;  height: 10rem;  back">
+<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2018/10/21/1669588f432097e2?w=472&h=229&f=gif&s=66004">
+    
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href="//cdn.bootcss.com/node-waves/0.7.5/waves.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    *{margin:0;padding:0;}
+    img{border:0 none;}
+    body{background:#eee;}
+    .m-box{margin:0 auto;display:inline-block;padding:20px;background:#fff;}
+    .m-box p{margin:0 0 10px;}
+    .m-box .icn a{display:block;width:55px;height:35px;background:url('http://l.bst.126.net/rsc/img/weibo.png?035') no-repeat;}
+    .m-box .icn .wb1{background-position:10px -216px;}
+    .m-box .icn .wb2{background-position:-190px -216px;}
+    .m-box .icn .wb3{background:url(http://l.bst.126.net/rsc/img/postshare/tieba24.png) 15px 0 no-repeat;}
+    .m-box .icn .wb4{background-position:-88px -215px;}
+    .m-box .icn .wb5{background-position:-138px -216px;}
+    .m-box .icn .wb6{background-position:-245px -216px;}
+    .m-box .icn .wb7{background-position:-300px -216px;}
+    .m-box .icn .wb8{background-position:-355px -216px;}
+    .m-box .icn .wb9{background-position:-415px -215px;}
+  </style>
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+</head>
+</html>
+<body>
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+  <script>setLoadingBarProgress(20)</script> 
+  <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box" href='/' >
+				D.M
+			</a>
+			<div class='menu'>
+				<ul class='h-list'>
+					
+						<li>
+							<a class='flat-box nav-home' href='/'>
+								Home
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-archives' href='/archives'>
+								Archives
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-comments' href='/comments'>
+								Comments
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-about' href='/about'>
+								About
+							</a>
+						</li>
+					
+				</ul>
+				<div class='underline'></div>
+			</div>
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<span class="icon icon-search"></span>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search flat-box"></span></a></li>
+				
+				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu flat-box"></span></a></li>
+			</ul>
+		</div>
+		
+		<div class='nav-sub container container--flex'>
+			<a class="logo" class="flat-box" href='javascript:void(0)'>
+				Word of Forks
+			</a>
+
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a href='javascript:void(0)'><span class="icon icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class='s-top'><a href='javascript:void(0)'><span class="icon icon-arrow_upward flat-box"></span></a></li>
+				<li class='s-toc'><a href='javascript:void(0)'><span class="icon icon-format_list_numbered flat-box"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<aside class="menu-phone">
+	<nav>
+		
+			<a href="/" class="nav-home nav">
+				Home
+			</a>
+		
+			<a href="/archives" class="nav-archives nav">
+				Archives
+			</a>
+		
+			<a href="/comments" class="nav-comments nav">
+				Comments
+			</a>
+		
+			<a href="/about" class="nav-about nav">
+				About
+			</a>
+		
+	</nav>
+</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+  <div class="l_body">
+    <div class='container clearfix'>
+      <div class='l_main'>
+        <article id="post-Useful-CSS-Snippets"
+  class="post white-box article-type-post"
+  itemscope itemprop="blogPost">
+	<section class='meta'>
+	<h2 class="title">
+  	<a href="/2018/11/02/Useful-CSS-Snippets/">
+    	Useful CSS Snippets
+    </a>
+  </h2>
+	<time>
+	  Nov 2, 2018
+	</time>
+	
+    
+    <div class='cats'>
+        <a href="/categories/CSS/">CSS</a>
+    </div>
+
+	<br>
+	<span id="busuanzi_container_page_pv">
+		<time>浏览次数：<span id="busuanzi_value_page_pv"></span></time>
+ 	</span>
+	</section>
+	
+		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、手写-Loading-动画"><span class="toc-number">1.</span> <span class="toc-text">一、手写 Loading 动画</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）弹性加载动画"><span class="toc-number">1.1.</span> <span class="toc-text">（1）弹性加载动画</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）旋转小圆圈"><span class="toc-number">1.2.</span> <span class="toc-text">（2）旋转小圆圈</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、构建一个宽高比固定的-div"><span class="toc-number">2.</span> <span class="toc-text">二、构建一个宽高比固定的 div</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、自定义滚动条"><span class="toc-number">3.</span> <span class="toc-text">三、自定义滚动条</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、禁止文本被选中"><span class="toc-number">4.</span> <span class="toc-text">五、禁止文本被选中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六、渐变色文本"><span class="toc-number">5.</span> <span class="toc-text">六、渐变色文本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#七、Hover-下划线效果"><span class="toc-number">6.</span> <span class="toc-text">七、Hover 下划线效果</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#（1）从中间开始变化"><span class="toc-number">6.1.</span> <span class="toc-text">（1）从中间开始变化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（2）从左至右变化"><span class="toc-number">6.2.</span> <span class="toc-text">（2）从左至右变化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（3）实现左入左出、右入右出的效果"><span class="toc-number">6.3.</span> <span class="toc-text">（3）实现左入左出、右入右出的效果</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#八、-not-选择器"><span class="toc-number">7.</span> <span class="toc-text">八、:not 选择器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#九、滚动容器的渐变遮罩"><span class="toc-number">8.</span> <span class="toc-text">九、滚动容器的渐变遮罩</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十、使用系统字体获得原生体验"><span class="toc-number">9.</span> <span class="toc-text">十、使用系统字体获得原生体验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十一、圆润的-checkbox"><span class="toc-number">10.</span> <span class="toc-text">十一、圆润的 checkbox</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十二、绘制一个三角形"><span class="toc-number">11.</span> <span class="toc-text">十二、绘制一个三角形</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#十三、过长的文本用省略号代替"><span class="toc-number">12.</span> <span class="toc-text">十三、过长的文本用省略号代替</span></a></li></ol></section>
+	
+	<section class="article typo">
+  	<div class="article-entry" itemprop="articleBody">
+    	<p>看了 30 Seconds CSS，有了许多收获，所以写下了这篇文章，算是收藏一些代码小片段，留作后用。</p>
+<h2 id="一、手写-Loading-动画"><a href="#一、手写-Loading-动画" class="headerlink" title="一、手写 Loading 动画"></a>一、手写 Loading 动画</h2><h3 id="（1）弹性加载动画"><a href="#（1）弹性加载动画" class="headerlink" title="（1）弹性加载动画"></a>（1）弹性加载动画</h3><p>CSS 代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.bounce-loading</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">20rem</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">10rem</span>;</span><br><span class="line">  <span class="attribute">background-color</span>:aqua;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.bounce-loading</span> &gt; <span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">1rem</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">1rem</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">0.5rem</span>;</span><br><span class="line">  <span class="attribute">background-color</span>:blueviolet;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> <span class="number">0.5rem</span>;</span><br><span class="line">  <span class="attribute">animation</span>: bounce <span class="number">1s</span> infinite alternate;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> bounce &#123;</span><br><span class="line">  0% &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translateY</span>(<span class="number">0</span>);</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  100% &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translateY</span>(<span class="number">2rem</span>);</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.bounce-loading</span> &gt; <span class="selector-tag">div</span><span class="selector-pseudo">:nth-child(2)</span> &#123;</span><br><span class="line">  <span class="attribute">animation-delay</span>: <span class="number">0.2s</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.bounce-loading</span> &gt; <span class="selector-tag">div</span><span class="selector-pseudo">:nth-child(3)</span> &#123;</span><br><span class="line">  <span class="attribute">animation-delay</span>: <span class="number">0.4s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>HTML 代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bounce-loading"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>效果如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/21/1669588f432097e2?w=472&amp;h=229&amp;f=gif&amp;s=66004" alt="img"><br><a id="more"></a> </p>
+<h3 id="（2）旋转小圆圈"><a href="#（2）旋转小圆圈" class="headerlink" title="（2）旋转小圆圈"></a>（2）旋转小圆圈</h3><p>CSS 代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.donut-loading</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">2rem</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">2rem</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">2rem</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">3px</span> solid <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>);</span><br><span class="line">  <span class="attribute">border-left-color</span>: <span class="number">#7983ff</span>;</span><br><span class="line">  <span class="attribute">animation</span>: rotate <span class="number">1s</span> infinite linear;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> rotate &#123;</span><br><span class="line">  <span class="selector-tag">from</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">0deg</span>)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">to</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">360deg</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>HTML 代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"donut-loading"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>效果如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/21/166958969ce9a9ae?w=89&amp;h=70&amp;f=gif&amp;s=45939" alt="img"></p>
+<h2 id="二、构建一个宽高比固定的-div"><a href="#二、构建一个宽高比固定的-div" class="headerlink" title="二、构建一个宽高比固定的 div"></a>二、构建一个宽高比固定的 div</h2><p>CSS 代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.reactive-height</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: aqua;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.reactive-height</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">padding-top</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.reactive-height</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">  <span class="attribute">display</span>: table;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>HTML 代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"reactive-height"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="三、自定义滚动条"><a href="#三、自定义滚动条" class="headerlink" title="三、自定义滚动条"></a>三、自定义滚动条</h2><p>CSS 代码如下：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.custom-scrollbar</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">40rem</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">7rem</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: aliceblue;</span><br><span class="line">  <span class="attribute">overflow-y</span>: scroll;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.custom-scrollbar</span><span class="selector-pseudo">::-webkit-scrollbar</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">8px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.custom-scrollbar</span><span class="selector-pseudo">::-webkit-scrollbar-thumb</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>:mediumpurple;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>HTML 代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"custom-scrollbar"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">      Pellentesque habitant morbi tristique senectus et </span><br><span class="line">      netus et malesuada fames ac turpis egestas. </span><br><span class="line">      Vestibulum tortor quam, feugiat vitae, </span><br><span class="line">      ultricies eget, tempor sit amet, ante. </span><br><span class="line">      Donec eu libero sit amet quam egestas semper. </span><br><span class="line">      Aenean ultricies mi vitae est. Mauris placerat </span><br><span class="line">      eleifend leo. Quisque sit amet est et sapien </span><br><span class="line">      ullamcorper pharetra. Vestibulum erat wisi, </span><br><span class="line">      condimentum sed, commodo vitae, ornare sit amet, </span><br><span class="line">      wisi. Aenean fermentum, elit eget tincidunt condimentum, </span><br><span class="line">      eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. </span><br><span class="line">      Donec non enim in turpis pulvinar facilisis. Ut felis. </span><br><span class="line">      Praesent dapibus, neque id cursus faucibus, tortor neque </span><br><span class="line">      egestas augue, eu vulputate magna eros eu erat. Aliquam </span><br><span class="line">      erat volutpat. Nam dui mi, tincidunt quis, accumsan </span><br><span class="line">      porttitor, facilisis luctus, metus</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">效果截图如下：</span><br><span class="line"></span><br><span class="line">  ![img](https://user-gold-cdn.xitu.io/2018/10/21/1669589eb68aae38?w=991&amp;h=193&amp;f=gif&amp;s=53441)</span><br><span class="line"></span><br><span class="line">## 四、自定义文本选择时的样式</span><br><span class="line"></span><br><span class="line">CSS 代码如下：</span><br><span class="line"></span><br><span class="line">```css</span><br><span class="line">  .custom-text-selection &#123;</span><br><span class="line">    width: 50%;</span><br><span class="line">  &#125;</span><br><span class="line">  .custom-text-selection::selection &#123;</span><br><span class="line">    background-color:navy;</span><br><span class="line">    color: white;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>HTML 代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"custom-text-selection"</span>&gt;</span></span><br><span class="line">  Pellentesque habitant morbi tristique senectus et </span><br><span class="line">  netus et malesuada fames ac turpis egestas. </span><br><span class="line">  Vestibulum tortor quam, feugiat vitae, </span><br><span class="line">  ultricies eget, tempor sit amet, ante. </span><br><span class="line">  Donec eu libero sit amet quam egestas semper. </span><br><span class="line">  Aenean ultricies mi vitae est. Mauris placerat </span><br><span class="line">  eleifend leo. Quisque sit amet est et sapien </span><br><span class="line">  ullamcorper pharetra. Vestibulum erat wisi, </span><br><span class="line">  condimentum sed, commodo vitae, ornare sit amet, </span><br><span class="line">  wisi. Aenean fermentum, elit eget tincidunt condimentum, </span><br><span class="line">  eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. </span><br><span class="line">  Donec non enim in turpis pulvinar facilisis. Ut felis. </span><br><span class="line">  Praesent dapibus, neque id cursus faucibus, tortor neque </span><br><span class="line">  egestas augue, eu vulputate magna eros eu erat. Aliquam </span><br><span class="line">  erat volutpat. Nam dui mi, tincidunt quis, accumsan </span><br><span class="line">  porttitor, facilisis luctus, metus</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>效果截图如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/21/166958a71843a806?w=1007&amp;h=352&amp;f=gif&amp;s=62142" alt="img"></p>
+<h2 id="五、禁止文本被选中"><a href="#五、禁止文本被选中" class="headerlink" title="五、禁止文本被选中"></a>五、禁止文本被选中</h2><p>CSS 代码如下：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.disable-selection</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">user-select</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>HTML 代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"disable-selection"</span>&gt;</span></span><br><span class="line">  Pellentesque habitant morbi tristique senectus et </span><br><span class="line">  netus et malesuada fames ac turpis egestas. </span><br><span class="line">  Vestibulum tortor quam, feugiat vitae, </span><br><span class="line">  ultricies eget, tempor sit amet, ante. </span><br><span class="line">  Donec eu libero sit amet quam egestas semper. </span><br><span class="line">  Aenean ultricies mi vitae est. Mauris placerat </span><br><span class="line">  eleifend leo. Quisque sit amet est et sapien </span><br><span class="line">  ullamcorper pharetra. Vestibulum erat wisi, </span><br><span class="line">  condimentum sed, commodo vitae, ornare sit amet, </span><br><span class="line">  wisi. Aenean fermentum, elit eget tincidunt condimentum, </span><br><span class="line">  eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. </span><br><span class="line">  Donec non enim in turpis pulvinar facilisis. Ut felis. </span><br><span class="line">  Praesent dapibus, neque id cursus faucibus, tortor neque </span><br><span class="line">  egestas augue, eu vulputate magna eros eu erat. Aliquam </span><br><span class="line">  erat volutpat. Nam dui mi, tincidunt quis, accumsan </span><br><span class="line">  porttitor, facilisis luctus, metus</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="六、渐变色文本"><a href="#六、渐变色文本" class="headerlink" title="六、渐变色文本"></a>六、渐变色文本</h2><p>HTML 代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"gradient-text"</span>&gt;</span></span><br><span class="line">  gradient-text</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>CSS 代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.gradient-text</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(pink, red);</span><br><span class="line">  <span class="attribute">-webkit-text-fill-color</span>: transparent;</span><br><span class="line">  <span class="attribute">-webkit-background-clip</span>: text;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>效果截图如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/21/166958ac186ecaa4?w=615&amp;h=147&amp;f=gif&amp;s=5740" alt="img"></p>
+<h2 id="七、Hover-下划线效果"><a href="#七、Hover-下划线效果" class="headerlink" title="七、Hover 下划线效果"></a>七、Hover 下划线效果</h2><p>该部分实现一个鼠标移入时的下划线变化效果，共用一段 HTML 代码，代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"hover-underline-animation"</span>&gt;</span></span><br><span class="line">  Hover Underline Animation</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>各部分实现效果的 CSS 代码各异，将分别给出。</p>
+<h3 id="（1）从中间开始变化"><a href="#（1）从中间开始变化" class="headerlink" title="（1）从中间开始变化"></a>（1）从中间开始变化</h3><p>CSS 代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.hover-underline-animation</span> &#123;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.hover-underline-animation</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">2px</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#7983ff</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">0</span>);</span><br><span class="line">  <span class="attribute">transition</span>: transform <span class="number">0.3s</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.hover-underline-animation</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>效果截图如下：</p>
+<p>  <img src="https://user-gold-cdn.xitu.io/2018/10/21/166958b6988221d8?w=528&amp;h=79&amp;f=gif&amp;s=19156" alt="img"></p>
+<h3 id="（2）从左至右变化"><a href="#（2）从左至右变化" class="headerlink" title="（2）从左至右变化"></a>（2）从左至右变化</h3><p>CSS 代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.hover-underline-animation</span> &#123;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.hover-underline-animation</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">2px</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#7983ff</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">0</span>);</span><br><span class="line">  <span class="attribute">transform-origin</span>: right;</span><br><span class="line">  <span class="attribute">transition</span>: transform <span class="number">0.3s</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.hover-underline-animation</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">scaleX</span>(<span class="number">1</span>);</span><br><span class="line">  <span class="attribute">transform-origin</span>: left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>效果截图如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/21/166958bd76246b68?w=528&amp;h=79&amp;f=gif&amp;s=17102" alt="img"></p>
+<h3 id="（3）实现左入左出、右入右出的效果"><a href="#（3）实现左入左出、右入右出的效果" class="headerlink" title="（3）实现左入左出、右入右出的效果"></a>（3）实现左入左出、右入右出的效果</h3><p>这一部分 HTML 代码略有不同，为了展示左入左出、右入右出的效果，需要三个元素来实现，所以 HTML 代码多了两个相同的元素：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"hover-underline-animation"</span>&gt;</span></span><br><span class="line">  Hover Underline Animation</span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"hover-underline-animation"</span>&gt;</span></span><br><span class="line">  Hover Underline Animation</span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"hover-underline-animation"</span>&gt;</span></span><br><span class="line">  Hover Underline Animation</span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>CSS 代码如下;<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.hover-underline-animation</span> &#123;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.hover-underline-animation</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">0%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">2px</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#7983ff</span>;</span><br><span class="line">  <span class="attribute">transition</span>: all <span class="number">0.3s</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.hover-underline-animation</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.hover-underline-animation</span><span class="selector-pseudo">:hover</span> ~ <span class="selector-class">.hover-underline-animation</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">100%</span> <span class="meta">!important</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>效果截图如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/21/166958c2b4b0426d?w=1000&amp;h=75&amp;f=gif&amp;s=67570" alt="img"></p>
+<h2 id="八、-not-选择器"><a href="#八、-not-选择器" class="headerlink" title="八、:not 选择器"></a>八、:not 选择器</h2><p>HTML 代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"not-selector"</span> <span class="attr">type</span>=<span class="string">"none"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>One<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Two<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Three<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span>Four<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>CSS 代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.not-selector</span> &gt; <span class="selector-tag">li</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">20rem</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.not-selector</span> &gt; <span class="selector-tag">li</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:last-child)</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#c3c3c3</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0.5px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>实现效果如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/21/166958cb638629e1?w=567&amp;h=178&amp;f=gif&amp;s=2971" alt="img"></p>
+<h2 id="九、滚动容器的渐变遮罩"><a href="#九、滚动容器的渐变遮罩" class="headerlink" title="九、滚动容器的渐变遮罩"></a>九、滚动容器的渐变遮罩</h2><p>HTML 代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"overflow-scroll-gradient dn"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    Pellentesque habitant morbi tristique senectus et </span><br><span class="line">    netus et malesuada fames ac turpis egestas. </span><br><span class="line">    Vestibulum tortor quam, feugiat vitae, </span><br><span class="line">    ultricies eget, tempor sit amet, ante. </span><br><span class="line">    Donec eu libero sit amet quam egestas semper. </span><br><span class="line">    Aenean ultricies mi vitae est. Mauris placerat </span><br><span class="line">    eleifend leo. Quisque sit amet est et sapien </span><br><span class="line">    ullamcorper pharetra. Vestibulum erat wisi, </span><br><span class="line">    condimentum sed, commodo vitae, ornare sit amet, </span><br><span class="line">    wisi. Aenean fermentum, elit eget tincidunt condimentum, </span><br><span class="line">    eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. </span><br><span class="line">    Donec non enim in turpis pulvinar facilisis. Ut felis. </span><br><span class="line">    Praesent dapibus, neque id cursus faucibus, tortor neque </span><br><span class="line">    egestas augue, eu vulputate magna eros eu erat. Aliquam </span><br><span class="line">    erat volutpat. Nam dui mi, tincidunt quis, accumsan </span><br><span class="line">    porttitor, facilisis luctus, metus</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>CSS 代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.overflow-scroll-gradient</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.overflow-scroll-gradient</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">5rem</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(rgba(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">1</span>), <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.001</span>))</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.overflow-scroll-gradient</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">5rem</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(rgba(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.001</span>), <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">1</span>))</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.overflow-scroll-gradient</span> &gt; <span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">15rem</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">25rem</span>;</span><br><span class="line">  <span class="attribute">overflow-y</span>: scroll;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>效果截图如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/21/166958ce71ae969c?w=751&amp;h=635&amp;f=gif&amp;s=663102" alt="img"></p>
+<h2 id="十、使用系统字体获得原生体验"><a href="#十、使用系统字体获得原生体验" class="headerlink" title="十、使用系统字体获得原生体验"></a>十、使用系统字体获得原生体验</h2><p>HTML 代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"system-font-stack"</span>&gt;</span>This text uses the system font.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>CSS 代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.system-font-stack</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: -apple-system, BlinkMacSystemFont, <span class="string">'Segoe UI'</span>, Roboto, Oxygen-Sans, Ubuntu, Cantarell, <span class="string">'Helvetica Neue'</span>, Helvetica, Arial, sans-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>我在 Ubuntu 系统下显示效果如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/21/166958d4832c8669?w=905&amp;h=194&amp;f=png&amp;s=11999" alt="img"></p>
+<h2 id="十一、圆润的-checkbox"><a href="#十一、圆润的-checkbox" class="headerlink" title="十一、圆润的 checkbox"></a>十一、圆润的 checkbox</h2><p>HTML 代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">id</span>=<span class="string">"toggle"</span> <span class="attr">class</span>=<span class="string">"offscreen"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"toggle"</span> <span class="attr">class</span>=<span class="string">"checkbox"</span>&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>CSS 代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.offscreen</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.checkbox</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">40px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.25</span>);</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.checkbox</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">18px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">18px</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">18px</span>;</span><br><span class="line">  <span class="attribute">background-color</span>: white;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">1px</span>;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">1px</span>;</span><br><span class="line">  <span class="attribute">transition</span>: transform .<span class="number">3s</span> ease;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#toggle</span><span class="selector-pseudo">:checked</span> + <span class="selector-class">.checkbox</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#7983ff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#toggle</span><span class="selector-pseudo">:checked</span> + <span class="selector-class">.checkbox</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translateX</span>(<span class="number">20px</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>效果截图如下：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/21/166958d8c308a316?w=246&amp;h=78&amp;f=gif&amp;s=19864" alt="img"></p>
+<h2 id="十二、绘制一个三角形"><a href="#十二、绘制一个三角形" class="headerlink" title="十二、绘制一个三角形"></a>十二、绘制一个三角形</h2><p>HTML 代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"triangle"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>CSS 代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.triangle</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1rem</span> solid transparent;</span><br><span class="line">  <span class="attribute">border-bottom</span>: <span class="number">3rem</span> solid blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>利用 CSS border 的特性绘制三角形，改变 border 的宽度，可以绘制不同特性的三角形。</p>
+<h2 id="十三、过长的文本用省略号代替"><a href="#十三、过长的文本用省略号代替" class="headerlink" title="十三、过长的文本用省略号代替"></a>十三、过长的文本用省略号代替</h2><p>HTML 代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"truncate-text"</span>&gt;</span></span><br><span class="line">  This text will be truncated with ellipse ......</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>CSS 代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.truncate-text</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">19rem</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">  <span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">  <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#c3c3c3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>效果截图如下;</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/21/166958e07efa6fc6?w=722&amp;h=115&amp;f=png&amp;s=9232" alt="img"></p>
+
+  	</div>
+	  
+		
+	
+		<div class="art-item-footer">
+				
+					<span class="art-item-left"><i class="icon icon-chevron-thin-left"></i>prev：<a href="/2018/11/02/基于-Webpack-4-搭建-Vue-开发环境/" rel="prev"  title="基于 Webpack 4 搭建 Vue 开发环境">
+						基于 Webpack 4 搭建 Vue 开发环境 
+					</a></span>
+				
+				
+		</div>
+	
+	</section>
+	
+	<div class="m-box">
+		<div class="icn"><a  class="wb1" onclick="shareToSinaWB(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb2" onclick="shareToQzone(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb3" onclick="shareToTieba(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb4" onclick="shareToDouban(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb6" onclick="shareToRenren(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb7" onclick="shareToKaixin(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb8" onclick="shareToFacebook(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb9" onclick="shareToTwitter(event)"></a></div>
+	</div>
+	<div class="comment"></div>
+</article>
+<script>
+	window.subData = {
+		title: 'Useful CSS Snippets',
+		tools: true
+	}
+</script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--Valine 的核心代码库-->
+<!-- <script src="/js/Valine.min.js"></script> -->
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+	new Valine({
+		// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+		av: AV,
+		el: '.comment',
+		emoticon_url: 'https://cloud.panjunwen.com/alu',
+		emoticon_list: ["吐.png", "期待.png", "高兴.png", "吐血倒地.png", "哭泣.png", "欢呼.png"],
+		appId: 'dEN3oH01uVTVRJFwuWKzucX3-gzGzoHsz', // 这里填写上面得到的APP ID
+		appKey: 'l11XssvYyHKpzcePOV03e2WJ', // 这里填写上面得到的APP KEY
+		placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!', // 留言框占位提示文字
+	});
+	var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
+			_width = 600,
+			_height = 600,
+			_top = (screen.height-_height)/2,
+			_left = (screen.width-_width)/2,
+			_url = window.location.href,
+			_pic = 'https://github.com/zhongdeming428/HexoBlog/blob/master/Blogs/source/images/logo.png?raw=true';
+	//分享到新浪微博
+	function shareToSinaWB(event){
+			event.preventDefault();
+			var _shareUrl = 'http://v.t.sina.com.cn/share/share.php?&appkey=895033136';     //真实的appkey，必选参数
+			_shareUrl += '&url='+ encodeURIComponent(_url||document.location);     //参数url设置分享的内容链接|默认当前页location，可选参数
+			_shareUrl += '&title=' + encodeURIComponent(_title||document.title);    //参数title设置分享的标题|默认当前页标题，可选参数
+			_shareUrl += '&source=' + encodeURIComponent(_source||'');
+			_shareUrl += '&sourceUrl=' + encodeURIComponent(_sourceUrl||'');
+			_shareUrl += '&content=' + 'utf-8';   //参数content设置页面编码gb2312|utf-8，可选参数
+			_shareUrl += '&pic=' + encodeURIComponent(_pic||'');  //参数pic设置图片链接|默认为空，可选参数
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',top='+_top+',left='+_left+',toolbar=no,menubar=no,scrollbars=no, resizable=1,location=no,status=0');
+	}
+	//分享到QQ空间
+	function shareToQzone(event){
+			event.preventDefault();
+			var _shareUrl = 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?';
+			_shareUrl += 'url=' + encodeURIComponent(_url||document.location);   //参数url设置分享的内容链接|默认当前页location
+			_shareUrl += '&showcount=' + _showcount||0;      //参数showcount是否显示分享总数,显示：'1'，不显示：'0'，默认不显示
+			_shareUrl += '&desc=' + encodeURIComponent(_desc||'分享的描述');    //参数desc设置分享的描述，可选参数
+			_shareUrl += '&summary=' + encodeURIComponent(_summary||'分享摘要');    //参数summary设置分享摘要，可选参数
+			_shareUrl += '&title=' + encodeURIComponent(_title||document.title);    //参数title设置分享标题，可选参数
+			_shareUrl += '&site=' + encodeURIComponent(_site||'');   //参数site设置分享来源，可选参数
+			_shareUrl += '&pics=' + encodeURIComponent(_pic||'');   //参数pics设置分享图片的路径，多张图片以＂|＂隔开，可选参数
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',top='+_top+',left='+_left+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到百度贴吧
+	function shareToTieba(event){
+			event.preventDefault();
+			var _shareUrl = 'http://tieba.baidu.com/f/commit/share/openShareApi?';
+			_shareUrl += 'title=' + encodeURIComponent(_title||document.title);  //分享的标题
+			_shareUrl += '&url=' + encodeURIComponent(_url||document.location);  //分享的链接
+			_shareUrl += '&pic=' + encodeURIComponent(_pic||'');    //分享的图片
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到豆瓣
+	function shareToDouban(event){
+			event.preventDefault();
+			var _shareUrl = 'http://shuo.douban.com/!service/share?';
+			_shareUrl += 'href=' + encodeURIComponent(_url||location.href);    //分享的链接
+			_shareUrl += '&name=' + encodeURIComponent(_title||document.title);    //分享的标题
+			_shareUrl += '&image=' + encodeURIComponent(_pic||'');    //分享的图片
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到腾讯微博
+	function shareToQQwb(event){
+			event.preventDefault();
+			var _shareUrl = 'http://v.t.qq.com/share/share.php?';
+			_shareUrl += 'title=' + encodeURIComponent(_title||document.title);    //分享的标题
+			_shareUrl += '&url=' + encodeURIComponent(_url||location.href);    //分享的链接
+			_shareUrl += '&appkey=5bd32d6f1dff4725ba40338b233ff155';    //在腾迅微博平台创建应用获取微博AppKey
+			_shareUrl += '&site=' + encodeURIComponent(_site||'');   //分享来源
+			_shareUrl += '&pic=' + encodeURIComponent(_pic||'');    //分享的图片，如果是多张图片，则定义var _pic='图片url1|图片url2|图片url3....'
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到人人网
+	function shareToRenren(event){
+			event.preventDefault();
+			var _shareUrl = 'http://share.renren.com/share/buttonshare.do?';
+			_shareUrl += 'link=' + encodeURIComponent(_url||location.href);   //分享的链接
+			_shareUrl += '&title=' + encodeURIComponent(_title||document.title);     //分享的标题
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到开心网
+	function shareToKaixin(event){
+			event.preventDefault();
+			var _shareUrl = 'http://www.kaixin001.com/rest/records.php?';
+			_shareUrl += 'url=' + encodeURIComponent(_url||location.href);    //分享的链接
+			_shareUrl += '&content=' + encodeURIComponent('分享的文字');    //需要分享的文字，当文字为空时，自动抓取分享网址的title
+			_shareUrl += '&pic=' + encodeURIComponent(_pic||'');     //分享的图片,多个使用半角逗号分隔
+			_shareUrl += '&showcount=0';    //是否显示分享数，显示：'1'，不显示：'0'
+			_shareUrl += '&style=11';      //显示的样式，必选参数
+			_shareUrl += '&aid=' + encodeURIComponent(_site||'');    //显示分享来源
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	function shareToKaixin2(event){
+			event.preventDefault();
+			var _shareUrl = 'http://www.kaixin001.com/repaste/share.php?';
+			_shareUrl += 'rtitle=' + encodeURIComponent(_title||document.title);   //分享的标题
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到facebook
+	function shareToFacebook(event){
+			event.preventDefault();
+			var _shareUrl = 'http://www.facebook.com/sharer/sharer.php?';
+			_shareUrl += 'u=' + encodeURIComponent(_url||location.href);    //分享的链接
+			_shareUrl += '&t=' + encodeURIComponent(_title||document.title);    //分享的标题
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到facebook
+	function shareToFacebook(event){
+			event.preventDefault();
+			var _shareUrl = 'http://www.facebook.com/sharer/sharer.php?';
+			_shareUrl += 'u=' + encodeURIComponent(_url||location.href);    //分享的链接
+			_shareUrl += '&t=' + encodeURIComponent(_title||document.title);    //分享的标题
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到Twitter
+	function shareToTwitter(event){
+			event.preventDefault();
+			var _shareUrl = 'http://twitter.com/intent/tweet?';
+			_shareUrl += 'url=' + encodeURIComponent(_url||location.href);    //分享的链接
+			_shareUrl += '&text=' + encodeURIComponent(_title||document.title);    //分享的标题
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+</script>
+      </div>
+      <aside class='l_side'>
+        
+  <section class='m_widget about'>
+
+<img class='avatar waves-image' src='/images/avatar.jpeg' />
+
+<div class='header'>DM Zhong</div>
+<div class='content'>
+<div class='desc'>Learn & Live</div>
+</div>
+</section>
+
+  <section class='m_widget links'>
+<div class='header'>Links</div>
+<div class='content'>
+    <ul class="entry">
+    
+        <li><a class="flat-box" target="_blank" href="https://juejin.im/user/59424035128fe1006a1c3747">
+            <div class='name'>掘金</div>
+        </a></li>
+    
+        <li><a class="flat-box" target="_blank" href="https://www.cnblogs.com/DM428/">
+            <div class='name'>博客园</div>
+        </a></li>
+    
+        <li><a class="flat-box" target="_blank" href="https://m.weibo.cn/profile/5198069647">
+            <div class='name'>新浪微博</div>
+        </a></li>
+    
+        <li><a class="flat-box" target="_blank" href="https://github.com/zhongdeming428/Blog/issues">
+            <div class='name'>原博客地址</div>
+        </a></li>
+    
+    </ul>
+</div>
+</section>
+
+  <section class='m_widget categories'>
+<div class='header'>Categories</div>
+<div class='content'>
+    
+    <ul class="entry">
+    
+        <li><a class="flat-box" href="/categories/JavaScript/Algorithm/"><div class='name'>Algorithm</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/CSS/"><div class='name'>CSS</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Linux/Git/"><div class='name'>Git</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Git/"><div class='name'>Git</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/HTTP/"><div class='name'>HTTP</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/HTTP/Hapijs/"><div class='name'>Hapijs</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Java/"><div class='name'>Java</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Nodejs/JavaScript/"><div class='name'>JavaScript</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/JavaScript/"><div class='name'>JavaScript</div><div class='badget'>6</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Vue/JavaScript/"><div class='name'>JavaScript</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Linux/"><div class='name'>Linux</div><div class='badget'>3</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Nodejs/"><div class='name'>Nodejs</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/React/"><div class='name'>React</div><div class='badget'>3</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/React/React-Router/"><div class='name'>React-Router</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/JavaScript/Redux/"><div class='name'>Redux</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/React/TypeScript/"><div class='name'>TypeScript</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Linux/Vim/"><div class='name'>Vim</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Vue/"><div class='name'>Vue</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Webpack/Vue/"><div class='name'>Vue</div><div class='badget'>2</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Web-性能优化/"><div class='name'>Web 性能优化</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Webpack/"><div class='name'>Webpack</div><div class='badget'>2</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Git/译文/"><div class='name'>译文</div><div class='badget'>1</div></a></li>
+    
+    </ul>
+    
+</div>
+</section>
+
+  
+
+
+      </aside>
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+  </div>
+  <footer id="footer" class="clearfix">
+
+	<div class="social-wrapper">
+  	
+      
+        <a href="https://github.com/zhongdeming428" class="social github"
+          target="_blank" rel="external">
+          <span class="icon icon-github"></span>
+        </a>
+      
+        <a href="https://twitter.com/zhongdeming428" class="social twitter"
+          target="_blank" rel="external">
+          <span class="icon icon-twitter"></span>
+        </a>
+      
+        <a href="/atom.xml" class="social rss"
+          target="_blank" rel="external">
+          <span class="icon icon-rss"></span>
+        </a>
+      
+    
+  </div>
+  
+  <div>Theme <a href='https://github.com/stkevintan/hexo-theme-material-flow' class="codename">MaterialFlow</a> designed by <a href="http://keyin.me/" target="_blank">Kevin Tan</a>.</div>
+  
+</footer>
+
+
+  <script>setLoadingBarProgress(80);</script>
+  
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<script src="/js/jquery.fitvids.js"></script>
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+  var ROOT = "/"||"/";
+  if(!ROOT.endsWith('/'))ROOT += '/';
+</script>
+<script src="/js/search.js"></script>
+<script src="/js/app.js"></script>
+
+
+  <script>setLoadingBarProgress(100);</script>
+  <script>
+    !function(){"use strict";function e(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}function t(e,t){return e(t={exports:{}},t.exports),t.exports}var n=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0});var n=1;t.default=function(){return""+n++},e.exports=t.default});e(n);var o=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:30,n=null;return function(){for(var o=this,i=arguments.length,r=Array(i),a=0;a<i;a++)r[a]=arguments[a];clearTimeout(n),n=setTimeout(function(){e.apply(o,r)},t)}},e.exports=t.default});e(o);var i=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0});t.SizeSensorId="size-sensor-id",t.SensorStyle="display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1;opacity:0",t.SensorClassName="size-sensor-object"});e(i);i.SizeSensorId,i.SensorStyle,i.SensorClassName;var r=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.createSensor=void 0;var n,r=(n=o)&&n.__esModule?n:{default:n};t.createSensor=function(e){var t=void 0,n=[],o=(0,r.default)(function(){n.forEach(function(t){t(e)})}),a=function(){t&&t.parentNode&&(t.contentDocument.defaultView.removeEventListener("resize",o),t.parentNode.removeChild(t),t=void 0,n=[])};return{element:e,bind:function(r){t||(t=function(){"static"===getComputedStyle(e).position&&(e.style.position="relative");var t=document.createElement("object");return t.onload=function(){t.contentDocument.defaultView.addEventListener("resize",o),o()},t.setAttribute("style",i.SensorStyle),t.setAttribute("class",i.SensorClassName),t.type="text/html",e.appendChild(t),t.data="about:blank",t}()),-1===n.indexOf(r)&&n.push(r)},destroy:a,unbind:function(e){var o=n.indexOf(e);-1!==o&&n.splice(o,1),0===n.length&&t&&a()}}}});e(r);r.createSensor;var a=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.createSensor=void 0;var n,i=(n=o)&&n.__esModule?n:{default:n};t.createSensor=function(e){var t=void 0,n=[],o=(0,i.default)(function(){n.forEach(function(t){t(e)})}),r=function(){t.disconnect(),n=[],t=void 0};return{element:e,bind:function(i){t||(t=function(){var t=new ResizeObserver(o);return t.observe(e),o(),t}()),-1===n.indexOf(i)&&n.push(i)},destroy:r,unbind:function(e){var o=n.indexOf(e);-1!==o&&n.splice(o,1),0===n.length&&t&&r()}}}});e(a);a.createSensor;var s=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.createSensor=void 0;t.createSensor="undefined"!=typeof ResizeObserver?a.createSensor:r.createSensor});e(s);s.createSensor;var u=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.removeSensor=t.getSensor=void 0;var o,r=(o=n)&&o.__esModule?o:{default:o};var a={};t.getSensor=function(e){var t=e.getAttribute(i.SizeSensorId);if(t&&a[t])return a[t];var n=(0,r.default)();e.setAttribute(i.SizeSensorId,n);var o=(0,s.createSensor)(e);return a[n]=o,o},t.removeSensor=function(e){var t=e.element.getAttribute(i.SizeSensorId);e.element.removeAttribute(i.SizeSensorId),e.destroy(),t&&a[t]&&delete a[t]}});e(u);u.removeSensor,u.getSensor;var c=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.clear=t.bind=void 0;t.bind=function(e,t){var n=(0,u.getSensor)(e);return n.bind(t),function(){n.unbind(t)}},t.clear=function(e){var t=(0,u.getSensor)(e);(0,u.removeSensor)(t)}});e(c);var l=c.clear,d=c.bind,v=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.msRequestAnimationFrame||window.oRequestAnimationFrame||function(e){return window.setTimeout(e,1e3/60)},f=window.cancelAnimationFrame||window.webkitCancelAnimationFrame||window.mozCancelAnimationFrame||window.msCancelAnimationFrame||window.oCancelAnimationFrame||window.clearTimeout,m=function(e){return new Array(e).fill(0).map(function(e,t){return t})},h=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var o in n)Object.prototype.hasOwnProperty.call(n,o)&&(e[o]=n[o])}return e},y=function(){function e(e,t){for(var n=0;n<t.length;n++){var o=t[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,n,o){return n&&e(t.prototype,n),o&&e(t,o),t}}();var p,w;new(function(){function e(t,n){var o=this;!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.randomPoints=function(){return m(o.c.count).map(function(){return{x:Math.random()*o.canvas.width,y:Math.random()*o.canvas.height,xa:2*Math.random()-1,ya:2*Math.random()-1,max:6e3}})},this.el=t,this.c=h({zIndex:-1,opacity:.5,color:"0,0,0",count:99},n),this.canvas=this.newCanvas(),this.context=this.canvas.getContext("2d"),this.points=this.randomPoints(),this.current={x:null,y:null,max:2e4},this.all=this.points.concat([this.current]),this.bindEvent(),this.requestFrame(this.drawCanvas)}return y(e,[{key:"bindEvent",value:function(){var e=this;d(this.el,function(){e.canvas.width=e.el.clientWidth,e.canvas.height=e.el.clientHeight}),this.onmousemove=window.onmousemove,window.onmousemove=function(t){e.current.x=t.clientX-e.el.offsetLeft+document.scrollingElement.scrollLeft,e.current.y=t.clientY-e.el.offsetTop+document.scrollingElement.scrollTop,e.onmousemove&&e.onmousemove(t)},this.onmouseout=window.onmouseout,window.onmouseout=function(){e.current.x=null,e.current.y=null,e.onmouseout&&e.onmouseout()}}},{key:"newCanvas",value:function(){"static"===getComputedStyle(this.el).position&&(this.el.style.position="relative");var e,t=document.createElement("canvas");return t.style.cssText="display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:"+(e=this.c).zIndex+";opacity:"+e.opacity,t.width=this.el.clientWidth,t.height=this.el.clientHeight,this.el.appendChild(t),t}},{key:"requestFrame",value:function(e){var t=this;this.tid=v(function(){return e.call(t)})}},{key:"drawCanvas",value:function(){var e=this,t=this.context,n=this.canvas.width,o=this.canvas.height,i=this.current,r=this.points,a=this.all;t.clearRect(0,0,n,o);var s=void 0,u=void 0,c=void 0,l=void 0,d=void 0,v=void 0;r.forEach(function(r,f){for(r.x+=r.xa,r.y+=r.ya,r.xa*=r.x>n||r.x<0?-1:1,r.ya*=r.y>o||r.y<0?-1:1,t.fillRect(r.x-.5,r.y-.5,1,1),u=f+1;u<a.length;u++)null!==(s=a[u]).x&&null!==s.y&&(l=r.x-s.x,d=r.y-s.y,(v=l*l+d*d)<s.max&&(s===i&&v>=s.max/2&&(r.x-=.03*l,r.y-=.03*d),c=(s.max-v)/s.max,t.beginPath(),t.lineWidth=c/2,t.strokeStyle="rgba("+e.c.color+","+(c+.2)+")",t.moveTo(r.x,r.y),t.lineTo(s.x,s.y),t.stroke()))}),this.requestFrame(this.drawCanvas)}},{key:"destroy",value:function(){l(this.el),window.onmousemove=this.onmousemove,window.onmouseout=this.onmouseout,f(this.tid),this.canvas.parentNode.removeChild(this.canvas)}}]),e}())(document.body,(p=document.getElementsByTagName("script"),{zIndex:(w=p[p.length-1]).getAttribute("zIndex"),opacity:w.getAttribute("opacity"),color:w.getAttribute("color"),count:Number(w.getAttribute("count"))||99}))}();
+  </script>
+</body>
+</html>

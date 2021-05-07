@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>前端工程师使用 Deepin 笔记 | D.M</title>
+  <meta name="description" content>
+  <meta name="keywords" content="ZhongDeming,zhongdeming428,Blog,Front-End,JavaScript">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/images/logo.png">
+  <link rel="alternate" href="/atom.xml" title="D.M">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="笔者是一枚前端开发，在学习 Linux 的时候碰到了一个问题 —— 怎么练手？因为自己电脑上面装的是 Windows 系统，所以学习 Linux 的时候没办法进行练习，而敲指令是学习 Linux 最高效的途径，这就需要我装一个 Linux 虚拟机或者双系统了。最开始的时候我用 VMWare 的虚拟机装了个 Ubuntu，后来觉得 Linux 好像确实好用，虚拟机又太耗资源，再加上我的 Windo">
+<meta name="keywords" content="ZhongDeming,zhongdeming428,Blog,Front-End,JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端工程师使用 Deepin 笔记">
+<meta property="og:url" content="http://zhongdeming.fun/2018/11/02/前端工程师使用-Deepin-笔记/index.html">
+<meta property="og:site_name" content="D.M">
+<meta property="og:description" content="笔者是一枚前端开发，在学习 Linux 的时候碰到了一个问题 —— 怎么练手？因为自己电脑上面装的是 Windows 系统，所以学习 Linux 的时候没办法进行练习，而敲指令是学习 Linux 最高效的途径，这就需要我装一个 Linux 虚拟机或者双系统了。最开始的时候我用 VMWare 的虚拟机装了个 Ubuntu，后来觉得 Linux 好像确实好用，虚拟机又太耗资源，再加上我的 Windo">
+<meta property="og:locale" content="Chinese">
+<meta property="og:image" content="https://user-images.githubusercontent.com/25274581/42255823-4ef7f7f0-7f80-11e8-8f0c-d553a2f84db1.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/25274581/42255763-ef5d2eaa-7f7f-11e8-9697-0c3ed4e1b7b9.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/25274581/42255796-2b0ef708-7f80-11e8-978d-065e7aacfced.png">
+<meta property="og:updated_time" content="2021-05-07T21:21:43.640Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端工程师使用 Deepin 笔记">
+<meta name="twitter:description" content="笔者是一枚前端开发，在学习 Linux 的时候碰到了一个问题 —— 怎么练手？因为自己电脑上面装的是 Windows 系统，所以学习 Linux 的时候没办法进行练习，而敲指令是学习 Linux 最高效的途径，这就需要我装一个 Linux 虚拟机或者双系统了。最开始的时候我用 VMWare 的虚拟机装了个 Ubuntu，后来觉得 Linux 好像确实好用，虚拟机又太耗资源，再加上我的 Windo">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/25274581/42255823-4ef7f7f0-7f80-11e8-8f0c-d553a2f84db1.png">
+    
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href="//cdn.bootcss.com/node-waves/0.7.5/waves.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    *{margin:0;padding:0;}
+    img{border:0 none;}
+    body{background:#eee;}
+    .m-box{margin:0 auto;display:inline-block;padding:20px;background:#fff;}
+    .m-box p{margin:0 0 10px;}
+    .m-box .icn a{display:block;width:55px;height:35px;background:url('http://l.bst.126.net/rsc/img/weibo.png?035') no-repeat;}
+    .m-box .icn .wb1{background-position:10px -216px;}
+    .m-box .icn .wb2{background-position:-190px -216px;}
+    .m-box .icn .wb3{background:url(http://l.bst.126.net/rsc/img/postshare/tieba24.png) 15px 0 no-repeat;}
+    .m-box .icn .wb4{background-position:-88px -215px;}
+    .m-box .icn .wb5{background-position:-138px -216px;}
+    .m-box .icn .wb6{background-position:-245px -216px;}
+    .m-box .icn .wb7{background-position:-300px -216px;}
+    .m-box .icn .wb8{background-position:-355px -216px;}
+    .m-box .icn .wb9{background-position:-415px -215px;}
+  </style>
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+</head>
+</html>
+<body>
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+  <script>setLoadingBarProgress(20)</script> 
+  <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box" href='/' >
+				D.M
+			</a>
+			<div class='menu'>
+				<ul class='h-list'>
+					
+						<li>
+							<a class='flat-box nav-home' href='/'>
+								Home
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-archives' href='/archives'>
+								Archives
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-comments' href='/comments'>
+								Comments
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-about' href='/about'>
+								About
+							</a>
+						</li>
+					
+				</ul>
+				<div class='underline'></div>
+			</div>
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<span class="icon icon-search"></span>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search flat-box"></span></a></li>
+				
+				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu flat-box"></span></a></li>
+			</ul>
+		</div>
+		
+		<div class='nav-sub container container--flex'>
+			<a class="logo" class="flat-box" href='javascript:void(0)'>
+				Word of Forks
+			</a>
+
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a href='javascript:void(0)'><span class="icon icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class='s-top'><a href='javascript:void(0)'><span class="icon icon-arrow_upward flat-box"></span></a></li>
+				<li class='s-toc'><a href='javascript:void(0)'><span class="icon icon-format_list_numbered flat-box"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<aside class="menu-phone">
+	<nav>
+		
+			<a href="/" class="nav-home nav">
+				Home
+			</a>
+		
+			<a href="/archives" class="nav-archives nav">
+				Archives
+			</a>
+		
+			<a href="/comments" class="nav-comments nav">
+				Comments
+			</a>
+		
+			<a href="/about" class="nav-about nav">
+				About
+			</a>
+		
+	</nav>
+</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+  <div class="l_body">
+    <div class='container clearfix'>
+      <div class='l_main'>
+        <article id="post-前端工程师使用-Deepin-笔记"
+  class="post white-box article-type-post"
+  itemscope itemprop="blogPost">
+	<section class='meta'>
+	<h2 class="title">
+  	<a href="/2018/11/02/前端工程师使用-Deepin-笔记/">
+    	前端工程师使用 Deepin 笔记
+    </a>
+  </h2>
+	<time>
+	  Nov 2, 2018
+	</time>
+	
+    
+    <div class='cats'>
+        <a href="/categories/Linux/">Linux</a>
+    </div>
+
+	<br>
+	<span id="busuanzi_container_page_pv">
+		<time>浏览次数：<span id="busuanzi_value_page_pv"></span></time>
+ 	</span>
+	</section>
+	
+		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、怎么安装-Deepin？"><span class="toc-number">1.</span> <span class="toc-text">一、怎么安装 Deepin？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、安装之后要做的事情"><span class="toc-number">2.</span> <span class="toc-text">二、安装之后要做的事情</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-修改启动项"><span class="toc-number">2.1.</span> <span class="toc-text">1. 修改启动项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-搭建开发环境"><span class="toc-number">2.2.</span> <span class="toc-text">2. 搭建开发环境</span></a></li></ol></li></ol></section>
+	
+	<section class="article typo">
+  	<div class="article-entry" itemprop="articleBody">
+    	<p><img src="https://user-images.githubusercontent.com/25274581/42255823-4ef7f7f0-7f80-11e8-8f0c-d553a2f84db1.png" alt="_ _20180704114914"></p>
+<p>笔者是一枚前端开发，在学习 Linux 的时候碰到了一个问题 —— 怎么练手？因为自己电脑上面装的是 Windows 系统，所以学习 Linux 的时候没办法进行练习，而敲指令是学习 Linux 最高效的途径，这就需要我装一个 Linux 虚拟机或者双系统了。最开始的时候我用 VMWare 的虚拟机装了个 Ubuntu，后来觉得 Linux 好像确实好用，虚拟机又太耗资源，再加上我的 Windows 越来越卡顿，我决定装一个双系统。<br><a id="more"></a><br>一开始的时候，我还是安装的 Ubuntu 系统，后来发现真的用 Ubuntu 系统进行工作学习的话，好像还是有很多的困难的，首先是 QQ 官方停止了对 Linux 平台的开发支持，在 Ubuntu 上面很难装 QQ；其次，Ubuntu 的字体什么的对于中文支持都还不够完善；再者，网易云音乐在 Ubuntu 上的表现也不是很好（启动都需要使用 <code>sudo netease-cloud-music</code> 命令来实现，不然点击图标都没得反应）。总之，Ubuntu 对于中国用户的日常使用而言，不太合适（当然人家可能压根就不是为了日常使用而开发的，更不是为了中国人开发的）。为了更好的学习 Linux，在经过了解之后，我决定安装 Deepin 作为我的日常使用系统。这是由武汉深之度科技公司开发的针对中国用户量身定制的 Linux 系统，预装搜狗输入法、QQ、网易云音乐等常用软件，应用商店也是应有尽有（甚至还有 Steam……虽然我没用过，详情见下图），用起来十分舒服。</p>
+<p><img src="https://user-images.githubusercontent.com/25274581/42255763-ef5d2eaa-7f7f-11e8-9697-0c3ed4e1b7b9.png" alt="_deepin-appstore_20180704114634"></p>
+<h2 id="一、怎么安装-Deepin？"><a href="#一、怎么安装-Deepin？" class="headerlink" title="一、怎么安装 Deepin？"></a>一、怎么安装 Deepin？</h2><p>好了，讲了这么多，那我们到底该怎么安装 Deepin 双系统呢？</p>
+<p>以 Windows7 为例，大概包括以下几个步骤：</p>
+<ul>
+<li>（1）磁盘管理，划分出一个大概 60G 的磁盘空间，不需要分配盘符。至于怎么划分磁盘，参考<a href="https://www.jb51.net/os/windows/41969.html" target="_blank" rel="noopener">教程</a>。</li>
+<li>（2）在 Deepin 官网下载 <a href="https://www.deepin.org/download/" target="_blank" rel="noopener">iso 镜像</a> 以及<a href="https://www.deepin.org/original/deepin-boot-maker/" target="_blank" rel="noopener">启动盘制作工具</a>。</li>
+<li>（3）将启动盘插入，重启电脑，进入 BIOS，选择从启动盘启动。</li>
+<li>（4）按照指引完成安装，记得选择安装在之前划分出来的磁盘，可以选择安装之前将其格式化。</li>
+<li>（5）安装完成，Enjoy it！</li>
+</ul>
+<p>这篇文章在 Deepin 系统中完成，所以没办法重温安装过程，只能讲一个安装的大概了。如果需要了解详细，可以参考 <a href="https://www.deepin.org/installation/" target="_blank" rel="noopener">Deepin 的官方安装教程</a>，其中还包含视频演示。</p>
+<h2 id="二、安装之后要做的事情"><a href="#二、安装之后要做的事情" class="headerlink" title="二、安装之后要做的事情"></a>二、安装之后要做的事情</h2><h3 id="1-修改启动项"><a href="#1-修改启动项" class="headerlink" title="1. 修改启动项"></a>1. 修改启动项</h3><p>安装系统完成之后，对计算机进行重启，开机时会进入引导界面。进入引导界面之后，可以看到前三个都是 Deepin 的选项，第四个叫做 <code>system setup</code>。选中这一项时，系统会报错，因为这一项是为启动 Windows 做准备的；可能由于 Deepin 的 Bug 问题，一开始是没有 Windows选项的，需要我们进入 Deepin 操作系统之后，在控制中心进行修改。</p>
+<p>说是修改，其实也不用做什么。进入 Deepin 之后，点击“控制中心”，右侧边栏会弹出设置界面。然后选择“系统信息”，拉倒最底下可以看到“启动菜单”。随便动一动就好了，比如把一个开关打开然后关掉……这样就行了。再次重启时就可以发现引导界面的最后一项可以正确的显示 Windows 了。</p>
+<h3 id="2-搭建开发环境"><a href="#2-搭建开发环境" class="headerlink" title="2. 搭建开发环境"></a>2. 搭建开发环境</h3><p>作为前端开发，我最基本的开发环境包括 VS Code、Git、Node、Python、Vim 等等。现在先安装这几个软件。</p>
+<p>安装 Git 和 Vim 比较简单，使用 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">    $ sudo apt-get install git vim</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">就阔以了。</span><br><span class="line"></span><br><span class="line">安装 VS Code 有两种方法，一种是在深度商店安装，一种是在 VS Code 官网下载 .deb 包，然后使用 </span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">    $ sudo dpkg -i 包名</span><br></pre></td></tr></table></figure>
+<p>安装就可以了。两者的区别是官网下载的是最新版，深度商店的版本要落后于官网的版本。</p>
+<p>安装 Node 也有两种方式。一种是通过包管理器安装、一种是官网源码安装。两者的区别是包管理器安装之后包名叫做 <code>nodejs</code> 而非 <code>node</code>，运行脚本时也是 <code>nodejs</code> 命令，很不习惯，如果要修改包名还需要使用其它命令更改。</p>
+<p>我使用的是源码安装方式。首先在 <a href="http://nodejs.cn/download/" target="_blank" rel="noopener">Node.js 中文网</a> 下载源代码。下载之后使用 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tar -zxf node-vxx.x.x.tar.gz</span><br></pre></td></tr></table></figure>
+<p>解压源码，然后使用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install g++</span><br></pre></td></tr></table></figure>
+<p>安装 gcc 源码编译器。</p>
+<p>接下来进入解压后的源码文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> node-vxx.x.x</span><br></pre></td></tr></table></figure>
+<p>运行配置文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./configure</span><br></pre></td></tr></table></figure>
+<p>然后开始编译：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ make</span><br></pre></td></tr></table></figure>
+<p>编译后开始安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ make install</span><br></pre></td></tr></table></figure>
+<p>安装完成之后就可以通过 <code>node -v</code> 查看所安装的 Node 版本是否正确了。</p>
+<p>Python 的话，Deepin 本身就安装了 Python，而且 2 和 3 两个版本都有。如果要使用 Python 3.x 运行脚本，需要使用 <code>python3</code> 命令。切记不要卸载系统本身自带的 2 版本的 Python！另外如果要在 VS Code 中调试 Python 代码，配置文件的写法请参考<a href="https://www.cnblogs.com/DM428/p/9248342.html" target="_blank" rel="noopener">我的另一篇博客</a>。</p>
+<p>另外推荐一个清理垃圾的软件，叫做 BleachBit，可以在深度商店直接安装，截图如下：</p>
+<p><img src="https://user-images.githubusercontent.com/25274581/42255796-2b0ef708-7f80-11e8-978d-065e7aacfced.png" alt="_deepin-appstore_20180704114413"></p>
+
+  	</div>
+	  
+		
+	
+		<div class="art-item-footer">
+				
+					<span class="art-item-left"><i class="icon icon-chevron-thin-left"></i>prev：<a href="/2018/11/02/Vim-基本命令入门/" rel="prev"  title="Vim 基本命令入门">
+						Vim 基本命令入门 
+					</a></span>
+				
+				
+					<span class="art-item-right">next：<a href="/2018/11/02/在-Deepin-中搭建-GitLab/" rel="next"  title="在 Deepin 中搭建 GitLab">
+						在 Deepin 中搭建 GitLab
+					</a><i class="icon icon-chevron-thin-right"></i></span>
+				
+		</div>
+	
+	</section>
+	
+	<div class="m-box">
+		<div class="icn"><a  class="wb1" onclick="shareToSinaWB(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb2" onclick="shareToQzone(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb3" onclick="shareToTieba(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb4" onclick="shareToDouban(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb6" onclick="shareToRenren(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb7" onclick="shareToKaixin(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb8" onclick="shareToFacebook(event)"></a></div>
+	</div>
+	<div class="m-box">
+		<div class="icn"><a class="wb9" onclick="shareToTwitter(event)"></a></div>
+	</div>
+	<div class="comment"></div>
+</article>
+<script>
+	window.subData = {
+		title: '前端工程师使用 Deepin 笔记',
+		tools: true
+	}
+</script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--Valine 的核心代码库-->
+<!-- <script src="/js/Valine.min.js"></script> -->
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+	new Valine({
+		// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+		av: AV,
+		el: '.comment',
+		emoticon_url: 'https://cloud.panjunwen.com/alu',
+		emoticon_list: ["吐.png", "期待.png", "高兴.png", "吐血倒地.png", "哭泣.png", "欢呼.png"],
+		appId: 'dEN3oH01uVTVRJFwuWKzucX3-gzGzoHsz', // 这里填写上面得到的APP ID
+		appKey: 'l11XssvYyHKpzcePOV03e2WJ', // 这里填写上面得到的APP KEY
+		placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!', // 留言框占位提示文字
+	});
+	var _title,_source,_sourceUrl,_pic,_showcount,_desc,_summary,_site,
+			_width = 600,
+			_height = 600,
+			_top = (screen.height-_height)/2,
+			_left = (screen.width-_width)/2,
+			_url = window.location.href,
+			_pic = 'https://github.com/zhongdeming428/HexoBlog/blob/master/Blogs/source/images/logo.png?raw=true';
+	//分享到新浪微博
+	function shareToSinaWB(event){
+			event.preventDefault();
+			var _shareUrl = 'http://v.t.sina.com.cn/share/share.php?&appkey=895033136';     //真实的appkey，必选参数
+			_shareUrl += '&url='+ encodeURIComponent(_url||document.location);     //参数url设置分享的内容链接|默认当前页location，可选参数
+			_shareUrl += '&title=' + encodeURIComponent(_title||document.title);    //参数title设置分享的标题|默认当前页标题，可选参数
+			_shareUrl += '&source=' + encodeURIComponent(_source||'');
+			_shareUrl += '&sourceUrl=' + encodeURIComponent(_sourceUrl||'');
+			_shareUrl += '&content=' + 'utf-8';   //参数content设置页面编码gb2312|utf-8，可选参数
+			_shareUrl += '&pic=' + encodeURIComponent(_pic||'');  //参数pic设置图片链接|默认为空，可选参数
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',top='+_top+',left='+_left+',toolbar=no,menubar=no,scrollbars=no, resizable=1,location=no,status=0');
+	}
+	//分享到QQ空间
+	function shareToQzone(event){
+			event.preventDefault();
+			var _shareUrl = 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?';
+			_shareUrl += 'url=' + encodeURIComponent(_url||document.location);   //参数url设置分享的内容链接|默认当前页location
+			_shareUrl += '&showcount=' + _showcount||0;      //参数showcount是否显示分享总数,显示：'1'，不显示：'0'，默认不显示
+			_shareUrl += '&desc=' + encodeURIComponent(_desc||'分享的描述');    //参数desc设置分享的描述，可选参数
+			_shareUrl += '&summary=' + encodeURIComponent(_summary||'分享摘要');    //参数summary设置分享摘要，可选参数
+			_shareUrl += '&title=' + encodeURIComponent(_title||document.title);    //参数title设置分享标题，可选参数
+			_shareUrl += '&site=' + encodeURIComponent(_site||'');   //参数site设置分享来源，可选参数
+			_shareUrl += '&pics=' + encodeURIComponent(_pic||'');   //参数pics设置分享图片的路径，多张图片以＂|＂隔开，可选参数
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',top='+_top+',left='+_left+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到百度贴吧
+	function shareToTieba(event){
+			event.preventDefault();
+			var _shareUrl = 'http://tieba.baidu.com/f/commit/share/openShareApi?';
+			_shareUrl += 'title=' + encodeURIComponent(_title||document.title);  //分享的标题
+			_shareUrl += '&url=' + encodeURIComponent(_url||document.location);  //分享的链接
+			_shareUrl += '&pic=' + encodeURIComponent(_pic||'');    //分享的图片
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到豆瓣
+	function shareToDouban(event){
+			event.preventDefault();
+			var _shareUrl = 'http://shuo.douban.com/!service/share?';
+			_shareUrl += 'href=' + encodeURIComponent(_url||location.href);    //分享的链接
+			_shareUrl += '&name=' + encodeURIComponent(_title||document.title);    //分享的标题
+			_shareUrl += '&image=' + encodeURIComponent(_pic||'');    //分享的图片
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到腾讯微博
+	function shareToQQwb(event){
+			event.preventDefault();
+			var _shareUrl = 'http://v.t.qq.com/share/share.php?';
+			_shareUrl += 'title=' + encodeURIComponent(_title||document.title);    //分享的标题
+			_shareUrl += '&url=' + encodeURIComponent(_url||location.href);    //分享的链接
+			_shareUrl += '&appkey=5bd32d6f1dff4725ba40338b233ff155';    //在腾迅微博平台创建应用获取微博AppKey
+			_shareUrl += '&site=' + encodeURIComponent(_site||'');   //分享来源
+			_shareUrl += '&pic=' + encodeURIComponent(_pic||'');    //分享的图片，如果是多张图片，则定义var _pic='图片url1|图片url2|图片url3....'
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到人人网
+	function shareToRenren(event){
+			event.preventDefault();
+			var _shareUrl = 'http://share.renren.com/share/buttonshare.do?';
+			_shareUrl += 'link=' + encodeURIComponent(_url||location.href);   //分享的链接
+			_shareUrl += '&title=' + encodeURIComponent(_title||document.title);     //分享的标题
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到开心网
+	function shareToKaixin(event){
+			event.preventDefault();
+			var _shareUrl = 'http://www.kaixin001.com/rest/records.php?';
+			_shareUrl += 'url=' + encodeURIComponent(_url||location.href);    //分享的链接
+			_shareUrl += '&content=' + encodeURIComponent('分享的文字');    //需要分享的文字，当文字为空时，自动抓取分享网址的title
+			_shareUrl += '&pic=' + encodeURIComponent(_pic||'');     //分享的图片,多个使用半角逗号分隔
+			_shareUrl += '&showcount=0';    //是否显示分享数，显示：'1'，不显示：'0'
+			_shareUrl += '&style=11';      //显示的样式，必选参数
+			_shareUrl += '&aid=' + encodeURIComponent(_site||'');    //显示分享来源
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	function shareToKaixin2(event){
+			event.preventDefault();
+			var _shareUrl = 'http://www.kaixin001.com/repaste/share.php?';
+			_shareUrl += 'rtitle=' + encodeURIComponent(_title||document.title);   //分享的标题
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到facebook
+	function shareToFacebook(event){
+			event.preventDefault();
+			var _shareUrl = 'http://www.facebook.com/sharer/sharer.php?';
+			_shareUrl += 'u=' + encodeURIComponent(_url||location.href);    //分享的链接
+			_shareUrl += '&t=' + encodeURIComponent(_title||document.title);    //分享的标题
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到facebook
+	function shareToFacebook(event){
+			event.preventDefault();
+			var _shareUrl = 'http://www.facebook.com/sharer/sharer.php?';
+			_shareUrl += 'u=' + encodeURIComponent(_url||location.href);    //分享的链接
+			_shareUrl += '&t=' + encodeURIComponent(_title||document.title);    //分享的标题
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+	//分享到Twitter
+	function shareToTwitter(event){
+			event.preventDefault();
+			var _shareUrl = 'http://twitter.com/intent/tweet?';
+			_shareUrl += 'url=' + encodeURIComponent(_url||location.href);    //分享的链接
+			_shareUrl += '&text=' + encodeURIComponent(_title||document.title);    //分享的标题
+			window.open(_shareUrl,'_blank','width='+_width+',height='+_height+',left='+_left+',top='+_top+',toolbar=no,menubar=no,scrollbars=no,resizable=1,location=no,status=0');
+	}
+</script>
+      </div>
+      <aside class='l_side'>
+        
+  <section class='m_widget about'>
+
+<img class='avatar waves-image' src='/images/avatar.jpeg' />
+
+<div class='header'>DM Zhong</div>
+<div class='content'>
+<div class='desc'>Learn & Live</div>
+</div>
+</section>
+
+  <section class='m_widget links'>
+<div class='header'>Links</div>
+<div class='content'>
+    <ul class="entry">
+    
+        <li><a class="flat-box" target="_blank" href="https://juejin.im/user/59424035128fe1006a1c3747">
+            <div class='name'>掘金</div>
+        </a></li>
+    
+        <li><a class="flat-box" target="_blank" href="https://www.cnblogs.com/DM428/">
+            <div class='name'>博客园</div>
+        </a></li>
+    
+        <li><a class="flat-box" target="_blank" href="https://m.weibo.cn/profile/5198069647">
+            <div class='name'>新浪微博</div>
+        </a></li>
+    
+        <li><a class="flat-box" target="_blank" href="https://github.com/zhongdeming428/Blog/issues">
+            <div class='name'>原博客地址</div>
+        </a></li>
+    
+    </ul>
+</div>
+</section>
+
+  <section class='m_widget categories'>
+<div class='header'>Categories</div>
+<div class='content'>
+    
+    <ul class="entry">
+    
+        <li><a class="flat-box" href="/categories/JavaScript/Algorithm/"><div class='name'>Algorithm</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/CSS/"><div class='name'>CSS</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Linux/Git/"><div class='name'>Git</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Git/"><div class='name'>Git</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/HTTP/"><div class='name'>HTTP</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/HTTP/Hapijs/"><div class='name'>Hapijs</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Java/"><div class='name'>Java</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Nodejs/JavaScript/"><div class='name'>JavaScript</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/JavaScript/"><div class='name'>JavaScript</div><div class='badget'>6</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Vue/JavaScript/"><div class='name'>JavaScript</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Linux/"><div class='name'>Linux</div><div class='badget'>3</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Nodejs/"><div class='name'>Nodejs</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/React/"><div class='name'>React</div><div class='badget'>3</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/React/React-Router/"><div class='name'>React-Router</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/JavaScript/Redux/"><div class='name'>Redux</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/React/TypeScript/"><div class='name'>TypeScript</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Linux/Vim/"><div class='name'>Vim</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Vue/"><div class='name'>Vue</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Webpack/Vue/"><div class='name'>Vue</div><div class='badget'>2</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Web-性能优化/"><div class='name'>Web 性能优化</div><div class='badget'>1</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Webpack/"><div class='name'>Webpack</div><div class='badget'>2</div></a></li>
+    
+        <li><a class="flat-box" href="/categories/Git/译文/"><div class='name'>译文</div><div class='badget'>1</div></a></li>
+    
+    </ul>
+    
+</div>
+</section>
+
+  
+
+
+      </aside>
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+  </div>
+  <footer id="footer" class="clearfix">
+
+	<div class="social-wrapper">
+  	
+      
+        <a href="https://github.com/zhongdeming428" class="social github"
+          target="_blank" rel="external">
+          <span class="icon icon-github"></span>
+        </a>
+      
+        <a href="https://twitter.com/zhongdeming428" class="social twitter"
+          target="_blank" rel="external">
+          <span class="icon icon-twitter"></span>
+        </a>
+      
+        <a href="/atom.xml" class="social rss"
+          target="_blank" rel="external">
+          <span class="icon icon-rss"></span>
+        </a>
+      
+    
+  </div>
+  
+  <div>Theme <a href='https://github.com/stkevintan/hexo-theme-material-flow' class="codename">MaterialFlow</a> designed by <a href="http://keyin.me/" target="_blank">Kevin Tan</a>.</div>
+  
+</footer>
+
+
+  <script>setLoadingBarProgress(80);</script>
+  
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<script src="/js/jquery.fitvids.js"></script>
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+  var ROOT = "/"||"/";
+  if(!ROOT.endsWith('/'))ROOT += '/';
+</script>
+<script src="/js/search.js"></script>
+<script src="/js/app.js"></script>
+
+
+  <script>setLoadingBarProgress(100);</script>
+  <script>
+    !function(){"use strict";function e(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}function t(e,t){return e(t={exports:{}},t.exports),t.exports}var n=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0});var n=1;t.default=function(){return""+n++},e.exports=t.default});e(n);var o=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:30,n=null;return function(){for(var o=this,i=arguments.length,r=Array(i),a=0;a<i;a++)r[a]=arguments[a];clearTimeout(n),n=setTimeout(function(){e.apply(o,r)},t)}},e.exports=t.default});e(o);var i=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0});t.SizeSensorId="size-sensor-id",t.SensorStyle="display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1;opacity:0",t.SensorClassName="size-sensor-object"});e(i);i.SizeSensorId,i.SensorStyle,i.SensorClassName;var r=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.createSensor=void 0;var n,r=(n=o)&&n.__esModule?n:{default:n};t.createSensor=function(e){var t=void 0,n=[],o=(0,r.default)(function(){n.forEach(function(t){t(e)})}),a=function(){t&&t.parentNode&&(t.contentDocument.defaultView.removeEventListener("resize",o),t.parentNode.removeChild(t),t=void 0,n=[])};return{element:e,bind:function(r){t||(t=function(){"static"===getComputedStyle(e).position&&(e.style.position="relative");var t=document.createElement("object");return t.onload=function(){t.contentDocument.defaultView.addEventListener("resize",o),o()},t.setAttribute("style",i.SensorStyle),t.setAttribute("class",i.SensorClassName),t.type="text/html",e.appendChild(t),t.data="about:blank",t}()),-1===n.indexOf(r)&&n.push(r)},destroy:a,unbind:function(e){var o=n.indexOf(e);-1!==o&&n.splice(o,1),0===n.length&&t&&a()}}}});e(r);r.createSensor;var a=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.createSensor=void 0;var n,i=(n=o)&&n.__esModule?n:{default:n};t.createSensor=function(e){var t=void 0,n=[],o=(0,i.default)(function(){n.forEach(function(t){t(e)})}),r=function(){t.disconnect(),n=[],t=void 0};return{element:e,bind:function(i){t||(t=function(){var t=new ResizeObserver(o);return t.observe(e),o(),t}()),-1===n.indexOf(i)&&n.push(i)},destroy:r,unbind:function(e){var o=n.indexOf(e);-1!==o&&n.splice(o,1),0===n.length&&t&&r()}}}});e(a);a.createSensor;var s=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.createSensor=void 0;t.createSensor="undefined"!=typeof ResizeObserver?a.createSensor:r.createSensor});e(s);s.createSensor;var u=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.removeSensor=t.getSensor=void 0;var o,r=(o=n)&&o.__esModule?o:{default:o};var a={};t.getSensor=function(e){var t=e.getAttribute(i.SizeSensorId);if(t&&a[t])return a[t];var n=(0,r.default)();e.setAttribute(i.SizeSensorId,n);var o=(0,s.createSensor)(e);return a[n]=o,o},t.removeSensor=function(e){var t=e.element.getAttribute(i.SizeSensorId);e.element.removeAttribute(i.SizeSensorId),e.destroy(),t&&a[t]&&delete a[t]}});e(u);u.removeSensor,u.getSensor;var c=t(function(e,t){Object.defineProperty(t,"__esModule",{value:!0}),t.clear=t.bind=void 0;t.bind=function(e,t){var n=(0,u.getSensor)(e);return n.bind(t),function(){n.unbind(t)}},t.clear=function(e){var t=(0,u.getSensor)(e);(0,u.removeSensor)(t)}});e(c);var l=c.clear,d=c.bind,v=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.msRequestAnimationFrame||window.oRequestAnimationFrame||function(e){return window.setTimeout(e,1e3/60)},f=window.cancelAnimationFrame||window.webkitCancelAnimationFrame||window.mozCancelAnimationFrame||window.msCancelAnimationFrame||window.oCancelAnimationFrame||window.clearTimeout,m=function(e){return new Array(e).fill(0).map(function(e,t){return t})},h=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var o in n)Object.prototype.hasOwnProperty.call(n,o)&&(e[o]=n[o])}return e},y=function(){function e(e,t){for(var n=0;n<t.length;n++){var o=t[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}return function(t,n,o){return n&&e(t.prototype,n),o&&e(t,o),t}}();var p,w;new(function(){function e(t,n){var o=this;!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.randomPoints=function(){return m(o.c.count).map(function(){return{x:Math.random()*o.canvas.width,y:Math.random()*o.canvas.height,xa:2*Math.random()-1,ya:2*Math.random()-1,max:6e3}})},this.el=t,this.c=h({zIndex:-1,opacity:.5,color:"0,0,0",count:99},n),this.canvas=this.newCanvas(),this.context=this.canvas.getContext("2d"),this.points=this.randomPoints(),this.current={x:null,y:null,max:2e4},this.all=this.points.concat([this.current]),this.bindEvent(),this.requestFrame(this.drawCanvas)}return y(e,[{key:"bindEvent",value:function(){var e=this;d(this.el,function(){e.canvas.width=e.el.clientWidth,e.canvas.height=e.el.clientHeight}),this.onmousemove=window.onmousemove,window.onmousemove=function(t){e.current.x=t.clientX-e.el.offsetLeft+document.scrollingElement.scrollLeft,e.current.y=t.clientY-e.el.offsetTop+document.scrollingElement.scrollTop,e.onmousemove&&e.onmousemove(t)},this.onmouseout=window.onmouseout,window.onmouseout=function(){e.current.x=null,e.current.y=null,e.onmouseout&&e.onmouseout()}}},{key:"newCanvas",value:function(){"static"===getComputedStyle(this.el).position&&(this.el.style.position="relative");var e,t=document.createElement("canvas");return t.style.cssText="display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:"+(e=this.c).zIndex+";opacity:"+e.opacity,t.width=this.el.clientWidth,t.height=this.el.clientHeight,this.el.appendChild(t),t}},{key:"requestFrame",value:function(e){var t=this;this.tid=v(function(){return e.call(t)})}},{key:"drawCanvas",value:function(){var e=this,t=this.context,n=this.canvas.width,o=this.canvas.height,i=this.current,r=this.points,a=this.all;t.clearRect(0,0,n,o);var s=void 0,u=void 0,c=void 0,l=void 0,d=void 0,v=void 0;r.forEach(function(r,f){for(r.x+=r.xa,r.y+=r.ya,r.xa*=r.x>n||r.x<0?-1:1,r.ya*=r.y>o||r.y<0?-1:1,t.fillRect(r.x-.5,r.y-.5,1,1),u=f+1;u<a.length;u++)null!==(s=a[u]).x&&null!==s.y&&(l=r.x-s.x,d=r.y-s.y,(v=l*l+d*d)<s.max&&(s===i&&v>=s.max/2&&(r.x-=.03*l,r.y-=.03*d),c=(s.max-v)/s.max,t.beginPath(),t.lineWidth=c/2,t.strokeStyle="rgba("+e.c.color+","+(c+.2)+")",t.moveTo(r.x,r.y),t.lineTo(s.x,s.y),t.stroke()))}),this.requestFrame(this.drawCanvas)}},{key:"destroy",value:function(){l(this.el),window.onmousemove=this.onmousemove,window.onmouseout=this.onmouseout,f(this.tid),this.canvas.parentNode.removeChild(this.canvas)}}]),e}())(document.body,(p=document.getElementsByTagName("script"),{zIndex:(w=p[p.length-1]).getAttribute("zIndex"),opacity:w.getAttribute("opacity"),color:w.getAttribute("color"),count:Number(w.getAttribute("count"))||99}))}();
+  </script>
+</body>
+</html>
